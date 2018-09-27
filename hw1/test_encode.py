@@ -10,3 +10,9 @@ def test_expected_string():
 def test_samelength_string():
      input = "aabbcc"
      assert encode(input) == "aabbcc"
+
+def test_norepeating_string():
+     input: "abcdefg"
+     assert encode(input) == "abcdefg"
+
+
