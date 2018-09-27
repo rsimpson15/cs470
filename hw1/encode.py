@@ -14,7 +14,6 @@ def encode(input_string):
                return input_string
           if len(result_string) > len(input_string):
                return input_string 
-           return result_string
-
+          return result_string
 
    
