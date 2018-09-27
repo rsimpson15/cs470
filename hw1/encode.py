@@ -9,8 +9,8 @@ def encode(input_string):
           i = 1
           while i < max_index and last_char == input_string[i]:
                i += 1
-          return last_char + str(i) + encode(text[i:])
-
+          result_string = last_char + str(i) + encode(input_string[i:])
+          return result_string
 
 
    
