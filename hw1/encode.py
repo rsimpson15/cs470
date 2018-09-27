@@ -10,6 +10,8 @@ def encode(input_string):
           while i < max_index and last_char == input_string[i]:
                i += 1
           result_string = last_char + str(i) + encode(input_string[i:])
+          if len(result_string) == len(input_string):
+               return input_string
           return result_string
 
 

@@ -5,4 +5,8 @@ def test_empty_string():
 
 def test_expected_string():
      input = "aaabbbcccddd"
-     assert encode(input) == "a3b3c3d3"
+     assert encode(input) == "a3b3c3d3" 
+
+def test_samelength_string():
+     input = "aabbcc"
+     assert encode(input) == "aabbcc"
