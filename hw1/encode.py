@@ -12,7 +12,9 @@ def encode(input_string):
           result_string = last_char + str(i) + encode(input_string[i:])
           if len(result_string) == len(input_string):
                return input_string
-          return result_string
+          if len(result_string) > len(input_string):
+               return input_string 
+           return result_string
 
 
    

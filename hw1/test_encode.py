@@ -12,7 +12,7 @@ def test_samelength_string():
      assert encode(input) == "aabbcc"
 
 def test_norepeating_string():
-     input: "abcdefg"
+     input = "abcdefg"
      assert encode(input) == "abcdefg"
 
 
